@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\JSONBuddy;C:\Users\Subba\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Spiceworks\Nmap;C:\Program Files\Heroku\bin;C:\Users\Subba\AppData\Local\Android\sdk\platform-tools;C:\Users\Subba\AppData\Roaming\npm
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "nodereact",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+      "node": "8.1.1",
+      "npm": "5.0.3"
+    },
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "express": "^4.16.3",
+      "mongoose": "^5.0.15",
+      "passport": "^0.4.0",
+      "passport-google-oauth20": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at Object.checkOne (C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:62444:11)
+      at C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:23451:28)
+      at C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:95:12
+      at C:\Users\Subba\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:22777:27
