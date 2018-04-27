@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import {Link} from 'react-router-dom';
+import Payments from './Payments';
 
 class Header extends Component {
   renderContent() {
@@ -13,11 +15,12 @@ class Header extends Component {
           </li>
         );
       default:
-        return (
+        return [
+            <li><Payments/></li>,
           <li>
             <a href="/api/logout">Logout</a>
           </li>
-        );
+        ];
     }
   }
 
@@ -27,7 +30,11 @@ class Header extends Component {
       <div>
         <nav>
           <div className="nav-wrapper">
-            <a className="brand-logo">Emailey</a>
+            <Link
+             to={this.props.auth? '/surveys' : '/' }
+            className="brand-logo">
+                Emailey
+            </Link>
             <ul className="right">
               <li>{this.renderContent()}</li>
             </ul>
