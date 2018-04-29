@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Payments from './Payments';
 
 class Header extends Component {
@@ -16,10 +16,16 @@ class Header extends Component {
         );
       default:
         return [
-            <li><Payments/></li>,
-          <li>
+          <li key="1"><Payments /></li>,
+          <li key="3" style={{
+
+            margin: '0 10px'
+
+          }}>Credits: {this.props.auth.credits}</li>,
+          <li key="2">
             <a href="/api/logout">Logout</a>
           </li>
+
         ];
     }
   }
@@ -31,12 +37,12 @@ class Header extends Component {
         <nav>
           <div className="nav-wrapper">
             <Link
-             to={this.props.auth? '/surveys' : '/' }
-            className="brand-logo">
-                Emailey
+              to={this.props.auth ? '/surveys' : '/'}
+              className="brand-logo">
+              Emailey
             </Link>
             <ul className="right">
-              <li>{this.renderContent()}</li>
+              {this.renderContent()}
             </ul>
           </div>
         </nav>
