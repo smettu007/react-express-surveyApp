@@ -9,11 +9,11 @@ module.exports = (survey)=>{
                     <p>Pleae answer the following question!</p>
                     <p>${survey.body}</p>
                     <div>
-                        <a href="http://localhost:3000">Yes</a>
+                        <a href="https://evening-river-87048.herokuapp.com/api/surveys/thanks">Yes</a>
                     </div>
 
                     <div>
-                        <a href="http://localhost:3000">No</a>
+                        <a href="https://evening-river-87048.herokuapp.com/api/surveys/thanks">No</a>
                     </div>
                 </div>
             </html>
