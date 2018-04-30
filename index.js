@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session')
 const passport = require('passport');
 const bodyParser = require('body-parser');
 require('./modals/User');//define user model
+require('./modals/Survey');//define survey model
 require('./services/passport');//autentication functions
 const keys = require('./config/keys')
 
@@ -25,6 +26,7 @@ app.use(passport.session())
 
 require('./routes/authRoutes')(app);//initital route
 require('./routes/billigRoutes')(app);//initital route
+require('./routes/surveyRoutes')(app);//initital route
 
 if(process.env.NODE_ENV === 'production'){
 
