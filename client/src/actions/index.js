@@ -19,6 +19,6 @@ export const submitSurvey = values => async dispatch =>{
 
  const res = await axios.post('/api/surveys',values);
 
- dispatch({type:"submit_survey", payload:res.data})
+ dispatch({type:FETCH_USER, payload:res.data})
 
 }
